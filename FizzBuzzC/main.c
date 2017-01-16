@@ -11,20 +11,22 @@
 int main(void)
 {
     int counter;
+    char fizzBuzz[] = {"FizzBuzz"};
+    char fizz[] = {"Fizz"};
+    char buzz[] = {"Buzz"};
     
-    for (counter = 0; counter <= 100; counter++) {
+    for (counter = 1; counter <= 100; counter++) {
         if ((counter % 5 == 0) && (counter % 3 == 0)) {
-        printf("%s\n", "FizzBuzz");
+        printf("%s\n", fizzBuzz);
      } else if (counter % 3 == 0) {
-         printf("%s\n","Fizz");
+         printf("%s\n", fizz);
      } else if (counter % 5 == 0) {
-         printf("%s\n","Buzz");
+         printf("%s\n", buzz);
      } else {
          printf("%d\n",counter);
      }
     
      }
     return 0;
-    
 }
 
