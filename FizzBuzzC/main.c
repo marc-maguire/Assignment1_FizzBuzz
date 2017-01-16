@@ -8,8 +8,23 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int main(void)
+{
+    int counter;
+    
+    for (counter = 0; counter <= 100; counter++) {
+        if ((counter % 5 == 0) && (counter % 3 == 0)) {
+        printf("%s\n", "FizzBuzz");
+     } else if (counter % 3 == 0) {
+         printf("%s\n","Fizz");
+     } else if (counter % 5 == 0) {
+         printf("%s\n","Buzz");
+     } else {
+         printf("%d\n",counter);
+     }
+    
+     }
     return 0;
+    
 }
+
